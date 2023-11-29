@@ -186,7 +186,7 @@ describe("DELETE /api/movies/:id", () => {
 
     const response = await request(app).delete(`/api/movies/${id}`);
 
-    expect(response.status).toEqual(200);
+    expect(response.status).toEqual(204);
   });
 
   it("should return an error", async () => {

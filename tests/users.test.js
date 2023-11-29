@@ -201,7 +201,7 @@ describe("DELETE /api/users/:id", () => {
 
     const response = await request(app).delete(`/api/users/${id}`);
 
-    expect(response.status).toEqual(200);
+    expect(response.status).toEqual(204);
 
   });
 
