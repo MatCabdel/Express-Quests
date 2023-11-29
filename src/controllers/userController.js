@@ -77,7 +77,7 @@ const deleteUser = (req, res) => {
       if (result.affectedRows === 0) {
         res.sendStatus(404);
       } else {
-        res.sendStatus(204);
+        res.sendStatus(200);
       }
     })
     .catch((err) => {
